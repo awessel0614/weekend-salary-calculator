@@ -13,8 +13,8 @@ function addEmployee(event){
     let idNumber = document.querySelector(`#id-number`).value;
     let jobTitle = document.querySelector(`#job-title`).value;
     let annualSalary = document.querySelector(`#annual-salary`).value;
-
-    console.log(totalMonthly += Number(annualSalary));
+    
+    totalMonthly = totalMonthly + (Number(annualSalary)/12);
 
     let employeeList = document.querySelector(`#employee-list`);
     employeeList.innerHTML += `
@@ -27,12 +27,16 @@ function addEmployee(event){
         </tr>
     `;
 
+
     let totalMonthlySection = document.querySelector(`#total-monthly`);
-    totalMonthlySection.innerHTML += `
-        <h3>${totalMonthly}</h3>
-    
+    totalMonthlySection.innerHTML = `
+    <h3>${totalMonthly}</h3>
+
 
     `;
 
+   
 
 }
+
+
