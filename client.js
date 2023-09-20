@@ -23,19 +23,20 @@ function addEmployee(event){
             <td>${lastName}</td>
             <td>${idNumber}</td>
             <td>${jobTitle}</td>
-            <td>${annualSalary}</td>
+            <td>${annualSalary}</td> 
+            <td><button class='remove-employee' onClick='removeEmployee(event)'>Delete</button></td>
         </tr>
     `;
-
 
     let totalMonthlySection = document.querySelector(`#total-monthly`);
     totalMonthlySection.innerHTML = `
     <h3>${totalMonthly}</h3>
 
-
     `;
+}
 
-   
+function removeEmployee(event){
+    event.target.parentElement.parentElement.remove();
 
 }
 
