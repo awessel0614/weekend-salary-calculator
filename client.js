@@ -14,7 +14,7 @@ function addEmployee(event){
     let jobTitle = document.querySelector(`#job-title`).value;
     let annualSalary = document.querySelector(`#annual-salary`).value;
     
-    totalMonthly = totalMonthly + (Number(annualSalary)/12);
+    totalMonthly = Math.round(totalMonthly + (Number(annualSalary)/12));
 
     let employeeList = document.querySelector(`#employee-list`);
     employeeList.innerHTML += `
