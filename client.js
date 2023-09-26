@@ -30,14 +30,14 @@ function addEmployee(event){
 
     let totalMonthlySection = document.querySelector(`#total-monthly`);
     totalMonthlySection.innerHTML = `
-    <h3>${totalMonthly}</h3>
+    <h3>$${totalMonthly}</h3>
 
     `;
 
     if(totalMonthly >= 20000) {
     
             totalMonthlySection.innerHTML = `
-            <h3 style="background-color: red; color: white">${totalMonthly}</h3>
+            <h3 style="background-color: red; color: white; display:inline-block;">$${totalMonthly}</h3>
             `;
     }
 }

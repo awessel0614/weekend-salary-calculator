@@ -13,7 +13,7 @@
 
 
     <div id="employee-form">
-        <h2>Add Employee</h2>
+        <h2 id="add-employee">Add Employee</h2>
         <form onSubmit="addEmployee(event)">
             <label for="first-name">First Name</label>
             <input type="text" id="first-name" />
@@ -36,6 +36,7 @@
                     <th>ID</th>
                     <th>Title</th>
                     <th>Annual Salary</th>
+                    <th>        </th>
                 </tr>
             </thead>
             <tbody id="employee-list">
@@ -47,7 +48,7 @@
     </div>
 
     <div>
-        <h2>Total Monthly:</h2>
+        <h2 id="the-total">Total Monthly:</h2>
         <div id="total-monthly">
        <!--inner HTML-->
         </div> 
