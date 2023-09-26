@@ -33,6 +33,13 @@ function addEmployee(event){
     <h3>${totalMonthly}</h3>
 
     `;
+
+    if(totalMonthly >= 20000) {
+    
+            totalMonthlySection.innerHTML = `
+            <h3 style="background-color: red; color: white">${totalMonthly}</h3>
+            `;
+    }
 }
 
 function removeEmployee(event){
